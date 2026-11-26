@@ -44,6 +44,12 @@ export const translations = {
     fr: "Les sélections sont sauvegardées automatiquement dans votre navigateur (localStorage). Utilisez « Exporter » pour sauvegarder un fichier JSON réutilisable pour les calculs SRI / ISO 52120 / GRO / BACS.",
     en: "Your selections are automatically saved in your browser (localStorage). Use \u201CExport\u201D to save a JSON file that can be reused for SRI / ISO 52120 / GRO / BACS calculations."
   },
+  // --- Bandeau "version interne" ---
+  INTERNAL_DISCLAIMER: {
+    fr: "Version interne réservée à Buildwise et aux 3 Régions",
+    en: "Internal version restricted to Buildwise and the 3 Regions",
+    nl: "Interne versie, voorbehouden aan Buildwise en de 3 Gewesten"
+  },
     // --- Contact en cas de problème ---
   FOOTER_CONTACT_TEXT: {
     fr: "Un problème, une erreur ou une remarque ? Contactez-nous : ",
