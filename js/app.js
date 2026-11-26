@@ -1074,6 +1074,24 @@ function applyStaticTranslations() {
     resetBtn.title = t("RESET_BTN_TITLE", "Réinitialiser toutes les sélections");
   }
 
+  // Bandeau "version interne" (traduit selon la langue active)
+  let disclaimer = document.getElementById("internal-disclaimer");
+  if (!disclaimer) {
+    disclaimer = document.createElement("div");
+    disclaimer.id = "internal-disclaimer";
+    disclaimer.className = "internal-disclaimer";
+    disclaimer.setAttribute("role", "alert");
+    // Placé juste sous la barre du haut (Exporter / Importer / Réinitialiser)
+    const topbar = document.querySelector(".topbar");
+    if (topbar) {
+      topbar.insertAdjacentElement("afterend", disclaimer);
+    } else {
+      document.body.prepend(disclaimer);
+    }
+  }
+  disclaimer.textContent =
+    "⚠ " + t("INTERNAL_DISCLAIMER", "Version interne réservée à Buildwise et aux 3 Régions");
+
   const footer = document.getElementById("app-footer-text");
   if (footer) {
     footer.textContent = t(
