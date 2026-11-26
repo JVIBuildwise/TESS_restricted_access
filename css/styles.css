@@ -47,7 +47,18 @@ button {
   cursor: pointer;
 }
 
-/* -----------------------------------------------------------------------
+/* --- Bandeau "version interne" (rouge, toujours visible en haut) --- */
+  .internal-disclaimer {
+    padding: 10px 16px;
+    background: #c62828;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.2px;
+  }
+
+  /* -----------------------------------------------------------------------
    Topbar
    ----------------------------------------------------------------------- */
 
